@@ -1,6 +1,6 @@
 # 🐹 Whack-a-Goph (Work in Progress)
 
-Small exercises to get you used to reading and writing Go code!
+Small exercises to get you used to reading and writing Go code! For now, not all functionality is in working order.
 
 ## About
 
@@ -199,27 +199,6 @@ This will:
 - Show live feedback as you work
 
 Press `Ctrl+C` to exit watch mode.
-
-## Contributing
-
-We welcome contributions! Here are some ways you can help:
-
-- **Add new exercises** - Create exercises for topics we haven't covered
-- **Improve existing exercises** - Make explanations clearer or add better hints
-- **Fix bugs** - Found something not working? Let us know!
-- **Improve documentation** - Help make the learning experience better
-
-### Adding New Exercises
-
-1. Create a new directory in `exercises/` (e.g., `exercises/11_new_topic/`)
-2. Add your exercise file (e.g., `new_topic.go`) with broken code and TODOs
-3. Add corresponding test file (e.g., `new_topic_test.go`) with comprehensive tests
-4. Update the exercise list in `internal/exercise.go`
-5. Test your exercise thoroughly
-
-## Inspiration
-
-This project is heavily inspired by [Rustlings](https://github.com/rust-lang/rustlings), an excellent Rust learning tool. The concept of "fixing small exercises" is a proven effective way to learn a programming language through hands-on practice.
 
 ## License
 
