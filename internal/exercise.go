@@ -202,6 +202,29 @@ func GetExercises() ([]Exercise, error) {
 			Topic:       "primitive_types",
 		},
 
+		// Enums (3 exercises) - Go's closest equivalent
+		{
+			Name:        "enums1",
+			Path:        "exercises/enums/enums1.go",
+			Description: "Constants as enums",
+			Hint:        "Use constants with iota to create enum-like types",
+			Topic:       "enums",
+		},
+		{
+			Name:        "enums2",
+			Path:        "exercises/enums/enums2.go",
+			Description: "Custom types for type safety",
+			Hint:        "Create custom types for better type safety",
+			Topic:       "enums",
+		},
+		{
+			Name:        "enums3",
+			Path:        "exercises/enums/enums3.go",
+			Description: "String methods for enums",
+			Hint:        "Implement String() method for your enum types",
+			Topic:       "enums",
+		},
+
 		// Vecs (2 exercises)
 		{
 			Name:        "vecs1",
@@ -239,29 +262,6 @@ func GetExercises() ([]Exercise, error) {
 			Description: "Embedded structs and composition",
 			Hint:        "Use struct embedding for composition",
 			Topic:       "structs",
-		},
-
-		// Enums (3 exercises) - Go's closest equivalent
-		{
-			Name:        "enums1",
-			Path:        "exercises/enums/enums1.go",
-			Description: "Constants as enums",
-			Hint:        "Use constants with iota to create enum-like types",
-			Topic:       "enums",
-		},
-		{
-			Name:        "enums2",
-			Path:        "exercises/enums/enums2.go",
-			Description: "Custom types for type safety",
-			Hint:        "Create custom types for better type safety",
-			Topic:       "enums",
-		},
-		{
-			Name:        "enums3",
-			Path:        "exercises/enums/enums3.go",
-			Description: "String methods for enums",
-			Hint:        "Implement String() method for your enum types",
-			Topic:       "enums",
 		},
 
 		// Strings (4 exercises)
