@@ -1,4 +1,4 @@
-.PHONY: help build test clean install reset-all reset list next run watch hint test-all test-integration test-cli test-exercise test-performance test-quick test-verbose test-bench setup-tests clean-tests validate test-ci coverage cleanup
+.PHONY: help build test clean install reset-all reset list next run watch hint test-all test-integration test-cli test-exercise test-performance test-quick test-verbose test-bench setup-tests clean-tests validate test-ci coverage cleanup test-solutions
 .DEFAULT_GOAL := help
 
 # Build the binary
@@ -75,6 +75,11 @@ test-performance: setup-tests
 	@echo "🏃‍♂️ Running performance tests..."
 	go test ./tests/ -run "Performance|TestMemory|TestConcurrent" -timeout 120s
 
+# Run solution validation tests
+test-solutions: setup-tests
+	@echo "🎯 Running comprehensive solution validation tests..."
+	go test ./tests/ -run "TestComprehensiveExerciseSolutions|TestSolutionWorkflow|TestExerciseCanBeCompleted|TestRandomExerciseSampling" -timeout 180s
+
 # Run tests with verbose output
 test-verbose: setup-tests
 	@echo "🔍 Running tests with verbose output..."
@@ -100,7 +105,7 @@ clean-tests:
 	@go clean -testcache
 
 # Full project validation
-validate: clean clean-tests setup-tests test test-all
+validate: clean clean-tests setup-tests test test-all test-solutions
 	@echo ""
 	@echo "✅ Project validation complete!"
 	@echo "🐹 Ready for gopher whacking!"
@@ -248,6 +253,7 @@ help:
 	@echo "  make test-integration  Run integration tests"
 	@echo "  make test-cli      Run CLI functionality tests"
 	@echo "  make test-exercise Run exercise structure tests"
+	@echo "  make test-solutions Validate exercise solutions work"
 	@echo "  make test-performance  Run performance tests"
 	@echo "  make test-verbose  Run tests with verbose output"
 	@echo "  make test-bench    Run benchmark tests"

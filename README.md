@@ -1,4 +1,4 @@
-# 🐹 Whack-a-Goph (Work in Progress)
+# 🐹 Whack-a-Goph
 
 Small exercises to get you used to reading and writing Go code! For now, not all functionality is in working order.
 
@@ -199,11 +199,3 @@ This will:
 - Show live feedback as you work
 
 Press `Ctrl+C` to exit watch mode.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Happy Go learning! 🐹 Remember: the best way to learn Go is by writing Go code!
