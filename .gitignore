@@ -21,6 +21,17 @@ go.work
 whack-a-goph
 whack-a-goph.exe
 
+# Test binaries
+whack-a-goph-test
+*-test
+
+# Exercise binaries (compiled exercise solutions)
+exercises/*/[a-z]*
+exercises/*/*
+!exercises/*/*.go
+!exercises/*/*.mod
+!exercises/*/*.sum
+
 # Progress tracking file (user-specific)
 .whack-a-goph-progress.json
 
