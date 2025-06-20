@@ -1,6 +1,6 @@
 # 🐹 Whack-a-Goph
 
-Small exercises to get you used to reading and writing Go code! For now, not all functionality is in working order.
+Small exercises to get you used to reading and writing Go code!
 
 ## About
 
